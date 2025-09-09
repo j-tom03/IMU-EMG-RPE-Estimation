@@ -1,0 +1,4 @@
+GRU Regression: {'layers': [(128, 'g'), (32, 'd')], 'activation': 'relu', 'epochs': 500, 'learning_rate': 0.001, 'min_reps': 4} -- Score: 1.1941160559654236 -- EMG: True 
+GRU Regression: {'layers': [(64, 'g'), (32, 'd'), (16, 'd')], 'activation': 'linear', 'epochs': 100, 'learning_rate': 0.01, 'min_reps': 5} -- Score: 1.2599187791347504 -- EMG: False 
+LSTM Regression: {'layers': [(64, 'l'), (64, 'l'), (32, 'd')], 'activation': 'linear', 'epochs': 400, 'learning_rate': 0.001, 'min_reps': 7} -- Score: 1.217679500579834 -- EMG: True 
+LSTM Regression: {'layers': [(128, 'l'), (64, 'l'), (32, 'd')], 'activation': 'linear', 'epochs': 400, 'learning_rate': 0.01, 'min_reps': 5} -- Score: 1.2630667686462402 -- EMG: False 

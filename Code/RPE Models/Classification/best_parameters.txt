@@ -1,0 +1,14 @@
+RF Classifier: OrderedDict({'criterion': 'log_loss', 'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 1000}) -- Score: 0.7688554519764975 -- EMG: True 
+RF Classifier: OrderedDict({'criterion': 'log_loss', 'max_depth': 20, 'max_features': 'log2', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 500}) -- Score: 0.7694345128914457 -- EMG: False 
+Logistic Regression Classifier: OrderedDict({'C': 100, 'max_iter': 1000, 'penalty': 'l2', 'solver': 'saga'}) -- Score: 0.6379633585843631 -- EMG: True 
+Logistic Regression Classifier: OrderedDict({'C': 100, 'max_iter': 1000, 'penalty': 'l1', 'solver': 'saga'}) -- Score: 0.621448156668509 -- EMG: False 
+SVM Classifier: OrderedDict({'C': 1000, 'decision_function_shape': 'ovr', 'degree': 4, 'gamma': 0.01, 'kernel': 'rbf'}) -- Score: 0.7875791969331953 -- EMG: True 
+SVM Classifier: OrderedDict({'C': 1000, 'decision_function_shape': 'ovo', 'degree': 3, 'gamma': 0.01, 'kernel': 'rbf'}) -- Score: 0.7978891459522126 -- EMG: False 
+ANN Classifier: {'units': (64, 128, 128), 'batch_size': 64, 'epochs': 200, 'learning_rate': 0.001} -- Score: 0.6133619863579433 -- EMG: True 
+ANN Classifier: {'units': (64, 128, 64), 'batch_size': 64, 'epochs': 200, 'learning_rate': 0.001} -- Score: 0.6625914213630948 -- EMG: False 
+XGBoost: OrderedDict({'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 300, 'reg_lambda': 1, 'subsample': 0.8}) -- Score: 0.7726663776982814 -- EMG: True 
+XGBoost: OrderedDict({'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 500, 'reg_lambda': 0.1, 'subsample': 0.8}) -- Score: 0.7714717540272211 -- EMG: False 
+GRU Classification: {'layers': [(64, 'g'), (64, 'd')], 'activation': 'relu', 'epochs': 100, 'learning_rate': 0.001, 'min_reps': 4} -- Score: 0.34424438392175444 -- EMG: True 
+GRU Classification: {'layers': [(128, 'g'), (32, 'd')], 'activation': 'linear', 'epochs': 750, 'learning_rate': 5e-05, 'min_reps': 4} -- Score: 0.3388375952601054 -- EMG: False 
+LSTM Classification: {'layers': [(32, 'l'), (64, 'd')], 'activation': 'linear', 'epochs': 1000, 'learning_rate': 5e-05, 'min_reps': 4} -- Score: 0.33198151317180136 -- EMG: True 
+LSTM Classification: {'layers': [(128, 'l'), (64, 'l'), (32, 'd')], 'activation': 'linear', 'epochs': 750, 'learning_rate': 5e-05, 'min_reps': 5} -- Score: 0.31719796382811705 -- EMG: False 

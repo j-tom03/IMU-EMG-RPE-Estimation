@@ -1,0 +1,6 @@
+
+
+GRU Classification: {'layers': [(64, 'g'), (64, 'd')], 'activation': 'relu', 'epochs': 100, 'learning_rate': 0.001, 'min_reps': 4} -- Score: 0.34424438392175444 -- EMG: True 
+GRU Classification: {'layers': [(128, 'g'), (32, 'd')], 'activation': 'linear', 'epochs': 750, 'learning_rate': 5e-05, 'min_reps': 4} -- Score: 0.3388375952601054 -- EMG: False 
+LSTM Classification: {'layers': [(32, 'l'), (64, 'd')], 'activation': 'linear', 'epochs': 1000, 'learning_rate': 5e-05, 'min_reps': 4} -- Score: 0.33198151317180136 -- EMG: True 
+LSTM Classification: {'layers': [(128, 'l'), (64, 'l'), (32, 'd')], 'activation': 'linear', 'epochs': 750, 'learning_rate': 5e-05, 'min_reps': 5} -- Score: 0.31719796382811705 -- EMG: False 

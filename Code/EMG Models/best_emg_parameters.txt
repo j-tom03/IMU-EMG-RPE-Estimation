@@ -1,0 +1,24 @@
+RF Classifier: OrderedDict({'criterion': 'gini', 'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 2000}) -- Score: 0.7714594283496862 -- Target Column: emg_umap_km_class 
+RF Classifier: OrderedDict({'criterion': 'gini', 'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 500}) -- Score: 0.739566457451131 -- Target Column: emg_tsne_km_class 
+Logistic Regression Classifier: OrderedDict({'C': 100, 'max_iter': 500, 'penalty': 'l2', 'solver': 'saga'}) -- Score: 0.7271768960294881 -- Target Column: emg_umap_km_class 
+Logistic Regression Classifier: OrderedDict({'C': 100, 'max_iter': 500, 'penalty': 'l1', 'solver': 'saga'}) -- Score: 0.7419257090162406 -- Target Column: emg_tsne_km_class 
+SVM Classifier: OrderedDict({'C': 1000, 'decision_function_shape': 'ovr', 'degree': 4, 'gamma': 0.001, 'kernel': 'rbf'}) -- Score: 0.7418233714433833 -- Target Column: emg_umap_km_class 
+SVM Classifier: OrderedDict({'C': 1000, 'decision_function_shape': 'ovr', 'degree': 5, 'gamma': 0.001, 'kernel': 'rbf'}) -- Score: 0.7349392224639348 -- Target Column: emg_tsne_km_class 
+XGBoost: OrderedDict({'colsample_bytree': 0.8343239426201456, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 300, 'reg_lambda': 1, 'subsample': 0.9708676535375103}) -- Score: 0.7654491662659871 -- Target Column: emg_umap_km_class 
+XGBoost: OrderedDict({'colsample_bytree': 0.9997685623466541, 'gamma': 0.1, 'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 300, 'reg_lambda': 10, 'subsample': 0.9151966019408253}) -- Score: 0.7474604818777311 -- Target Column: emg_tsne_km_class 
+ANN: {'units': (64, 128, 128, 64), 'batch_size': 32, 'epochs': 400, 'learning_rate': 0.01} -- Score: 0.7533287889505456 -- Target Column: emg_umap_km_class 
+ANN: {'units': (32, 64, 32), 'batch_size': 32, 'epochs': 500, 'learning_rate': 0.01} -- Score: 0.7932306167795663 -- Target Column: emg_tsne_km_class 
+ANN: {'units': (16, 16, 16), 'batch_size': 32, 'epochs': 200, 'learning_rate': 0.001} -- Score: 0.7171970456838608 -- Target Column: emg_pca_1 
+ANN: {'units': (16, 16), 'batch_size': 64, 'epochs': 400, 'learning_rate': 0.01} -- Score: 0.2644081823527813 -- Target Column: emg_pca_2 
+ElasticNet Regression: OrderedDict({'alpha': 0.011721022975334805, 'l1_ratio': 0.30000000000000004, 'max_iter': 2869, 'tol': 0.0009614261061359256}) -- Score: 0.7357559311254913 -- Target Column: emg_pca_1 
+ElasticNet Regression: OrderedDict({'alpha': 0.007880462815669913, 'l1_ratio': 0.30000000000000004, 'max_iter': 3000, 'tol': 0.0001}) -- Score: 0.24068738259195527 -- Target Column: emg_pca_2 
+Lasso Regression: OrderedDict({'alpha': 0.004291934260128779, 'max_iter': 3000, 'tol': 0.0001}) -- Score: 0.7336462605207031 -- Target Column: emg_pca_1 
+Lasso Regression: OrderedDict({'alpha': 0.004291934260128779, 'max_iter': 1000, 'tol': 0.0001}) -- Score: 0.24087464357362545 -- Target Column: emg_pca_2 
+Ridge Regression: OrderedDict({'alpha': 3.088843596477485, 'max_iter': 3000, 'solver': 'saga', 'tol': 0.01}) -- Score: 0.7399988045102822 -- Target Column: emg_pca_1 
+Ridge Regression: OrderedDict({'alpha': 4.941713361323838, 'max_iter': 1000, 'solver': 'sparse_cg', 'tol': 0.01}) -- Score: 0.24401672051374387 -- Target Column: emg_pca_2 
+RF Regression: OrderedDict({'criterion': 'absolute_error', 'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 250}) -- Score: 0.7196720743584134 -- Target Column: emg_pca_1 
+RF Regression: OrderedDict({'criterion': 'squared_error', 'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 50}) -- Score: 0.31212044173459574 -- Target Column: emg_pca_2 
+XGB Regressor: OrderedDict({'colsample_bytree': 0.9803975794183063, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 300, 'reg_lambda': 1, 'subsample': 1.0}) -- Score: 0.7306682716690179 -- Target Column: emg_pca_1 
+XGB Regressor: OrderedDict({'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 100, 'reg_lambda': 0.1, 'subsample': 0.8}) -- Score: 0.31262679109524305 -- Target Column: emg_pca_2 
+SVR: OrderedDict({'C': 10, 'degree': 2, 'gamma': 0.001, 'kernel': 'rbf'}) -- Score: 0.7548059820996786 -- Target Column: emg_pca_1 
+SVR: OrderedDict({'C': 0.1, 'degree': 5, 'gamma': 0.0001, 'kernel': 'linear'}) -- Score: 0.2528321670234695 -- Target Column: emg_pca_2 
