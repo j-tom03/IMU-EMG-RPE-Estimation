@@ -24,3 +24,4 @@
 ### Additional Information
 * IMU units (Acc & Gyro) were placed on the exterior of the wrist
 * EMG units were placed at the peak of the bicep
+* Recorded RPE values for each rep are stored in `./emg_data_collection.xlsx`
